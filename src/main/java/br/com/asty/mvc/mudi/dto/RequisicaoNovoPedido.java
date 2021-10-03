@@ -1,11 +1,16 @@
 package br.com.asty.mvc.mudi.dto;
 
+import javax.validation.constraints.NotBlank;
+
 import br.com.asty.mvc.mudi.model.Pedido;
 
 public class RequisicaoNovoPedido {
 
+    @NotBlank
     private String nome;
+    @NotBlank
     private String urlProduto;
+    @NotBlank
     private String urlImagem;
     private String descricao;
 

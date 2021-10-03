@@ -20,11 +20,16 @@
         <h1 class="display-4">Novo Pedido</h1>
       </div>
       <div class="card mt-3">
-        <form action="/pedido/novo" method="POST" class="card-body">
+        <form
+          th:object="${requisicaoNovoPedido}"
+          action="/pedido/novo"
+          method="POST"
+          class="card-body"
+        >
           <div class="mb-3">
             <label for="nome" class="form-label">Produto</label>
             <input
-              name="nome"
+              th:field="*{nome}"
               placeholder="nome do produto"
               class="form-control"
             />
@@ -33,7 +38,7 @@
           <div class="mb-3">
             <label for="urlProduto" class="form-label">Produto</label>
             <input
-              name="urlProduto"
+              th:field="*{urlProduto}"
               placeholder="url do produto"
               class="form-control"
             />
@@ -42,7 +47,7 @@
           <div class="mb-3">
             <label for="urlImagem" class="form-label">Imagem</label>
             <input
-              name="urlImagem"
+              th:field="*{urlImagem}"
               placeholder="url da imagem do produto"
               class="form-control"
             />
@@ -51,7 +56,7 @@
           <div class="mb-3">
             <label for="descricao" class="form-label">Descrição</label>
             <textarea
-              name="descricao"
+              th:field="*{descricao}"
               placeholder="Adicione detalhes do produto"
               class="form-control"
             ></textarea>
