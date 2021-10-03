@@ -30,37 +30,53 @@
             <label for="nome" class="form-label">Produto</label>
             <input
               th:field="*{nome}"
+              th:errorclass="is-invalid"
               placeholder="nome do produto"
               class="form-control"
             />
             <small>Informe o nome do produto</small>
+            <div class="invalid-feedback" th:errors="*{nome}">
+              Erros nome do produto
+            </div>
           </div>
           <div class="mb-3">
             <label for="urlProduto" class="form-label">Produto</label>
             <input
               th:field="*{urlProduto}"
+              th:errorclass="is-invalid"
               placeholder="url do produto"
               class="form-control"
             />
             <small>Informe a url do produto</small>
+            <div class="invalid-feedback" th:errors="*{urlProduto}">
+              Erros url do produto
+            </div>
           </div>
           <div class="mb-3">
             <label for="urlImagem" class="form-label">Imagem</label>
             <input
               th:field="*{urlImagem}"
+              th:errorclass="is-invalid"
               placeholder="url da imagem do produto"
               class="form-control"
             />
             <small>Informe a url da imagem do produto</small>
+            <div class="invalid-feedback" th:errors="*{urlImagem}">
+              Erros url da imagem do produto
+            </div>
           </div>
           <div class="mb-3">
             <label for="descricao" class="form-label">Descrição</label>
             <textarea
               th:field="*{descricao}"
+              th:errorclass="is-invalid"
               placeholder="Adicione detalhes do produto"
               class="form-control"
             ></textarea>
-            <small>Informe a url da imagem do produto</small>
+            <small>Informe a descrição do produto</small>
+            <div class="invalid-feedback" th:errors="*{descricao}">
+              Erros da descrição do produto
+            </div>
           </div>
           <button type="submit" class="btn btn-primary">Cadastrar</button>
         </form>
