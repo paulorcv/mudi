@@ -19,33 +19,47 @@
       <div class="container-fluid bg-dark text-light p-5">
         <h1 class="display-4">Novo Pedido</h1>
       </div>
-
-      <form action="/pedido/novo" method="POST">
-        <div>
-          <label for="nome">Produto</label>
-          <input name="nome" placeholder="nome do produto" />
-          <small>Informe o nome do produto</small>
-        </div>
-        <div>
-          <label for="urlProduto">Produto</label>
-          <input name="urlProduto" placeholder="url do produto" />
-          <small>Informe a url do produto</small>
-        </div>
-        <div>
-          <label for="urlImagem">Imagem</label>
-          <input name="urlImagem" placeholder="url da imagem do produto" />
-          <small>Informe a url da imagem do produto</small>
-        </div>
-        <div>
-          <label for="descricao">Descrição</label>
-          <textarea
-            name="descricao"
-            placeholder="Adicione detalhes do produto"
-          ></textarea>
-          <small>Informe a url da imagem do produto</small>
-        </div>
-        <button type="submit">Cadastrar</button>
-      </form>
+      <div class="card mt-3">
+        <form action="/pedido/novo" method="POST" class="card-body">
+          <div class="mb-3">
+            <label for="nome" class="form-label">Produto</label>
+            <input
+              name="nome"
+              placeholder="nome do produto"
+              class="form-control"
+            />
+            <small>Informe o nome do produto</small>
+          </div>
+          <div class="mb-3">
+            <label for="urlProduto" class="form-label">Produto</label>
+            <input
+              name="urlProduto"
+              placeholder="url do produto"
+              class="form-control"
+            />
+            <small>Informe a url do produto</small>
+          </div>
+          <div class="mb-3">
+            <label for="urlImagem" class="form-label">Imagem</label>
+            <input
+              name="urlImagem"
+              placeholder="url da imagem do produto"
+              class="form-control"
+            />
+            <small>Informe a url da imagem do produto</small>
+          </div>
+          <div class="mb-3">
+            <label for="descricao" class="form-label">Descrição</label>
+            <textarea
+              name="descricao"
+              placeholder="Adicione detalhes do produto"
+              class="form-control"
+            ></textarea>
+            <small>Informe a url da imagem do produto</small>
+          </div>
+          <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
