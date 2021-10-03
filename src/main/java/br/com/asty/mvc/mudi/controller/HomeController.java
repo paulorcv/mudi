@@ -15,7 +15,7 @@ public class HomeController {
 
     @Autowired
     private PedidoRepository pedidoRepository;
-  
+
     @GetMapping("/home")
     public String home(Model model) {
 
