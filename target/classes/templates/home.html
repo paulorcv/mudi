@@ -8,21 +8,23 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <div>
-            <div>Nome do produto</div>
-           <div>Valor: <span>299,90</span></div> 
-           <div>Data da entrega: <span>28/10/2021</span></div> 
+        <div th:each="pedido : ${pedidos}">
+            <div th:text="${pedido.nome}">Nome do produto</div>
+           <div>Valor: <span th:text="${pedido.valorNegociado}">299,90</span></div> 
+           <div>Data da entrega: <span th:text="${pedido.dataDaEntrega}">28/10/2021</span></div> 
 
            <div>Produto</div>
-           <div>url do produto</div>
+           <div>
+               <input th:value="${pedido.urlProduto}" value="url do produto" />
+           </div> 
 
            <div>Descrição</div>
            <div>
-               <textarea>descrição do pedido</textarea>
+               <textarea th:text="${pedido.descricao}">descrição do pedido</textarea>
            </div>
 
            <div>
-               <img src="/" />
+               <img th:src="${pedido.urlImagem}" src="/" />
            </div>
         </div>
     </body>
