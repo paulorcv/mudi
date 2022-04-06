@@ -27,3 +27,4 @@ target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
 target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
 target/surefire-reports/br.com.asty.mvc.mudi.MudiApplicationTests.txt
 target/surefire-reports/TEST-br.com.asty.mvc.mudi.MudiApplicationTests.xml
+.vscode
