@@ -1,4 +1,8 @@
-br\com\asty\mvc\mudi\model\Pedido.class
-br\com\asty\mvc\mudi\controller\HomeController.class
-br\com\asty\mvc\mudi\controller\HelloController.class
-br\com\asty\mvc\mudi\MudiApplication.class
+br/com/asty/mvc/mudi/model/StatusPedido.class
+br/com/asty/mvc/mudi/repository/PedidoRepository.class
+br/com/asty/mvc/mudi/controller/PedidoController.class
+br/com/asty/mvc/mudi/dto/RequisicaoNovoPedido.class
+br/com/asty/mvc/mudi/controller/HomeController.class
+br/com/asty/mvc/mudi/controller/HelloController.class
+br/com/asty/mvc/mudi/model/Pedido.class
+br/com/asty/mvc/mudi/MudiApplication.class
